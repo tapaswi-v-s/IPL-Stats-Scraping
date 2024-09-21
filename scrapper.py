@@ -17,15 +17,11 @@ transformation_log_file = 'transformation_log.txt'
 
 # ===== Directories =====
 raw_data_dir = './scraped_data'
-transformed_data_dir = './transformed'
 log_dir = './log'
 
 # ===== Create Necessary Directories =====
 if not os.path.exists(raw_data_dir):
     os.mkdir(raw_data_dir)
-
-if not os.path.exists(transformed_data_dir):
-    os.mkdir(transformed_data_dir)
 
 if not os.path.exists(log_dir):
     os.mkdir(log_dir)

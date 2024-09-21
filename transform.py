@@ -10,8 +10,11 @@ transformation_log_file = 'transformation_log.txt'
 
 # ===== Directories =====
 raw_data_dir = './scraped_data'
-transformed_data_dir = './transformed'
+transformed_data_dir = './transformed_data'
 log_dir = './log'
+
+if not os.path.exists(transformed_data_dir):
+    os.mkdir(transformed_data_dir)
 
 def transform():
     '''Function to transform the scraped html files into .csv files'''
